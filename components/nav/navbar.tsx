@@ -16,7 +16,7 @@ import NavbarLink from "@/components/nav/link";
 import Menu from "@/components/nav/menu";
 import { Logo, FacebookIcon, PhoneIcon } from "@/components/icons";
 
-export const Navbar = () => {
+const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useReducer((current) => !current, false);
 
   return (
