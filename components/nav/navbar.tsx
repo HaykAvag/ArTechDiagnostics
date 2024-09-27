@@ -45,18 +45,23 @@ const Navbar = () => {
       </NavbarContent>
 
       <NavbarContent justify="end">
-        <Link isExternal aria-label="Facebook" href={siteConfig.links.twitter}>
+        <Link
+          isExternal
+          aria-label="Facebook"
+          className="hidden lg:flex"
+          href={siteConfig.links.twitter}
+        >
           <FacebookIcon className="text-default-500" />
         </Link>
 
         <Button
           as={Link}
-          className="hidden lg:flex font-medium tracking-wide"
+          className="min-w-1 font-medium tracking-wide lg:w-auto"
           color="primary"
           href="tel:+16613629490"
           startContent={<PhoneIcon size={17} />}
         >
-          (661) 362-9490
+          <p className="hidden lg:block">(661) 360-2868</p>
         </Button>
       </NavbarContent>
 
