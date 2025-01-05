@@ -21,6 +21,7 @@ export default function Home() {
           alt="Banner"
           className="absolute w-full min-w-fit"
           src={bannerImage}
+          width={2560}
         />
 
         <div className="inline-block max-w-2xl text-center justify-center z-10">
