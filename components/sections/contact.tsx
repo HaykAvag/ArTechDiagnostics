@@ -19,7 +19,7 @@ const Contact = () => {
           as={Link}
           className="shrink-0 font-medium tracking-wide mt-2"
           color="primary"
-          href="tel:+16613629490"
+          href="tel:+13107396337"
           startContent={<PhoneIcon size={17} />}
         >
           (310) 739-6337
