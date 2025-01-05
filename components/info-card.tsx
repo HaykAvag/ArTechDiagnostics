@@ -14,7 +14,7 @@ const InfoCard = ({
   return (
     <Card className="min-w-64 grow flex-1">
       <CardHeader className="px-6 pt-5 flex gap-6">
-        <Icon size={36} />
+        <Icon color="#b22845" size={36} />
         <p className="text-lg font-bold whitespace-pre-line">{name}</p>
       </CardHeader>
 

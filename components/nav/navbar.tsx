@@ -10,17 +10,20 @@ import { Link } from "@nextui-org/link";
 import NextLink from "next/link";
 import { Button } from "@nextui-org/button";
 import { useReducer } from "react";
+import Image from "next/image";
 
 import { siteConfig } from "@/config/site";
 import NavbarLink from "@/components/nav/link";
 import Menu from "@/components/nav/menu";
-import { Logo, FacebookIcon, PhoneIcon } from "@/components/icons";
+import { FacebookIcon, PhoneIcon } from "@/components/icons";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useReducer((current) => !current, false);
 
   return (
     <NextUINavbar
+      className="bg-default-200"
+      height="7rem"
       isBordered={true}
       isMenuOpen={isMenuOpen}
       maxWidth="2xl"
@@ -28,20 +31,25 @@ const Navbar = () => {
       onMenuOpenChange={setIsMenuOpen}
     >
       <NavbarContent justify="start">
-        <NavbarBrand as="li" className="gap-3 max-w-fit">
-          <NextLink className="flex items-center gap-1" href="/">
-            <Logo />
-            <p className="font-bold text-inherit">ArTech Diagnostics</p>
+        <NavbarBrand as="li">
+          <NextLink href="/">
+            <Image
+              alt="Logo"
+              className="w-24 h-auto"
+              height={536}
+              src="/logo.png"
+              width={343}
+            />
           </NextLink>
         </NavbarBrand>
+      </NavbarContent>
 
-        <ul className="hidden lg:flex gap-4 ml-2">
-          {siteConfig.navItems.map(({ href, label }) => (
-            <NavbarItem key={href}>
-              <NavbarLink href={href} label={label} />
-            </NavbarItem>
-          ))}
-        </ul>
+      <NavbarContent className="hidden lg:flex gap-10 center" justify="center">
+        {siteConfig.navItems.map(({ href, label }) => (
+          <NavbarItem key={href}>
+            <NavbarLink href={href} label={label} size="lg" />
+          </NavbarItem>
+        ))}
       </NavbarContent>
 
       <NavbarContent justify="end">
@@ -49,9 +57,9 @@ const Navbar = () => {
           isExternal
           aria-label="Facebook"
           className="hidden lg:flex"
-          href={siteConfig.links.twitter}
+          href={siteConfig.links.facebook}
         >
-          <FacebookIcon className="text-default-500" />
+          <FacebookIcon className="text-default-500" size={30} />
         </Link>
 
         <Button
@@ -61,7 +69,7 @@ const Navbar = () => {
           href="tel:+16613629490"
           startContent={<PhoneIcon size={17} />}
         >
-          <p className="hidden lg:block">(661) 360-2868</p>
+          <p className="hidden lg:block">(310) 739-6337</p>
         </Button>
       </NavbarContent>
 

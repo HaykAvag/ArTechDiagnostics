@@ -6,7 +6,7 @@ import { title } from "@/components/primitives";
 
 const Services = () => {
   return (
-    <section>
+    <section id="services">
       <h1
         className={clsx(
           "text-center lg:text-left",
