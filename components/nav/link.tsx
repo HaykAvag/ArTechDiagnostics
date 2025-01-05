@@ -6,7 +6,7 @@ import clsx from "clsx";
 const NavbarLink = ({
   href,
   label,
-  size = "md",
+  size = "md"
 }: {
   href: string;
   label: string;
@@ -16,13 +16,7 @@ const NavbarLink = ({
   const isActive = path === href;
 
   return (
-    <Link
-      className={clsx(
-        isActive && "font-bold",
-        linkStyles({ color: isActive ? "primary" : "foreground", size }),
-      )}
-      href={href}
-    >
+    <Link className={linkStyles({ size, color: "foreground" })} href={href}>
       {label}
     </Link>
   );
