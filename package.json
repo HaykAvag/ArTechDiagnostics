@@ -9,12 +9,16 @@
 		"lint": "eslint . --ext .ts,.tsx -c .eslintrc.json --fix"
 	},
 	"dependencies": {
+		"@nextui-org/button": "^2.2.8",
+		"@nextui-org/link": "^2.2.6",
+		"@nextui-org/navbar": "^2.2.7",
 		"@nextui-org/react": "^2.6.10",
-		"@nextui-org/system": "2.2.5",
-		"@nextui-org/theme": "2.2.9",
+		"@nextui-org/system": "^2.4.5",
+		"@nextui-org/theme": "^2.4.4",
 		"@react-aria/ssr": "3.9.4",
 		"@react-aria/visually-hidden": "3.8.12",
 		"clsx": "2.1.1",
+		"framer-motion": "^11.15.0",
 		"intl-messageformat": "^10.5.0",
 		"next": "14.2.4",
 		"next-themes": "^0.2.1",
