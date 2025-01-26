@@ -29,7 +29,7 @@ export default function Home() {
           <h1 className={title({ color: "light" })}> Calibration Center</h1>
 
           <h2 className={subtitle({ color: "light", class: "mt-4" })}>
-            Cathedral City ADAS & Car Diagnostics Experts
+            ADAS & Car Diagnostics Experts
           </h2>
         </div>
 
