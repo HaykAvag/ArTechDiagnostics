@@ -14,23 +14,23 @@ import { FacebookIcon, InstagramIcon } from "@/components/icons";
 export const metadata: Metadata = {
   title: {
     default: siteConfig.name,
-    template: `%s - ${siteConfig.name}`,
+    template: `%s - ${siteConfig.name}`
   },
   description: siteConfig.description,
   icons: {
-    icon: "/favicon.ico",
-  },
+    icon: "/favicon.ico"
+  }
 };
 
 export const viewport: Viewport = {
   themeColor: [
     { media: "(prefers-color-scheme: light)", color: "white" },
-    { media: "(prefers-color-scheme: dark)", color: "black" },
-  ],
+    { media: "(prefers-color-scheme: dark)", color: "black" }
+  ]
 };
 
 export default function RootLayout({
-  children,
+  children
 }: {
   children: React.ReactNode;
 }) {
@@ -40,7 +40,7 @@ export default function RootLayout({
       <body
         className={clsx(
           "min-h-screen bg-background font-sans antialiased",
-          fontSans.className,
+          fontSans.className
         )}
       >
         <Providers themeProps={{ enableSystem: false, attribute: "class" }}>
@@ -49,7 +49,7 @@ export default function RootLayout({
             <main>{children}</main>
 
             <footer className="container mx-auto max-w-screen-2xl flex lg:flex-row flex-col py-6 pt-10 pr-10 mt-4 justify-between px-10">
-              <div className="flex gap-1 pb-3">
+              <div className="flex items-center gap-1 pb-3">
                 <Link
                   isExternal
                   aria-label="Facebook"
@@ -64,6 +64,10 @@ export default function RootLayout({
                   href={siteConfig.links.instagram}
                 >
                   <FacebookIcon className="text-default-500" size={30} />
+                </Link>
+
+                <Link href="mailto:artechdiagnostics@gmail.com">
+                  artechdiagnostics@gmail.com
                 </Link>
               </div>
 
