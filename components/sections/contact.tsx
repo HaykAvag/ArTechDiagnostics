@@ -20,20 +20,20 @@ const Contact = () => {
             as={Link}
             className="shrink-0 font-medium tracking-wide mt-2"
             color="primary"
-            href="tel:+13107396337"
+            href="tel:+16613629119"
             startContent={<PhoneIcon size={17} />}
           >
-            (310) 739-6337
+            (661) 362-9119
           </Button>
 
           <Button
             as={Link}
             className="shrink-0 font-medium tracking-wide mt-2"
             color="default"
-            href="tel:+16613629119"
+            href="tel:+13107396337"
             startContent={<PhoneIcon size={17} />}
           >
-            (661) 362-9119
+            (310) 739-6337
           </Button>
         </div>
       </div>

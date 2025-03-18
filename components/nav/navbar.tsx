@@ -66,10 +66,10 @@ const Navbar = () => {
           as={Link}
           className="min-w-1 font-medium tracking-wide lg:w-auto"
           color="primary"
-          href="tel:+13107396337"
+          href="tel:+16613629119"
           startContent={<PhoneIcon size={17} />}
         >
-          <p className="hidden lg:block">(310) 739-6337</p>
+          <p className="hidden lg:block">(661) 362-9119</p>
         </Button>
       </NavbarContent>
 

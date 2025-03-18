@@ -43,7 +43,7 @@ export default function Home() {
             }),
             "z-10"
           )}
-          href="tel:+13107396337"
+          href="tel:+16613629119"
         >
           Book Service
         </Button>
