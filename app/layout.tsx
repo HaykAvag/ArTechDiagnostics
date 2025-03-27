@@ -52,8 +52,8 @@ export default function RootLayout({
               <div className="flex items-center gap-1 pb-3">
                 <Link
                   isExternal
-                  aria-label="Facebook"
-                  href={siteConfig.links.facebook}
+                  aria-label="Instagram"
+                  href={siteConfig.links.instagram}
                 >
                   <InstagramIcon className="text-default-500" size={30} />
                 </Link>
@@ -61,7 +61,7 @@ export default function RootLayout({
                 <Link
                   isExternal
                   aria-label="Facebook"
-                  href={siteConfig.links.instagram}
+                  href={siteConfig.links.facebook}
                 >
                   <FacebookIcon className="text-default-500" size={30} />
                 </Link>
